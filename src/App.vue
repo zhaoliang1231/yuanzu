@@ -9,6 +9,7 @@
 <script>
 import Header from './Pabulic/Header/Header.vue'
 export default {
+ 
   name: 'App',
   components: {Header}
 }
