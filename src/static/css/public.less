@@ -1,80 +1,234 @@
 @import "./common.less";
-
-*{
-	font-family: "微软雅黑";
-	box-sizing: border-box;
-	font-size: 12px;
-	color: #333;
+* {
+  font-family: '微软雅黑';
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #333;
 }
 
-ul{
-	list-style: none;
+ul {
+  list-style: none;
 }
-
-a{
-	color: #4f4f4f;
-	text-decoration: none;
+input {
+  outline: none;
 }
-#content-fuild{
-	padding:0px 75px;
+input::-webkit-input-placeholder {
+  color: #aeaeae;
+}
+input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #aeaeae;
+}
+input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #aeaeae;
+}
+input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #aeaeae;
+}
+.content-fuild {
+  padding: 0px 75px;
 }
 // 所有的页面最外部用content-fuild装着
-
-.a-hover-pink{
-	transition: 0.4s all;
-	-moz-transition: 0.4s all;
-	-webkit-transition: 0.4s all;
-	-ms-transition: 0.4s all;
+a {
+  color: #4f4f4f;
+  text-decoration: none;
 }
-.a-hover-pink:hover{
-	color: @pink;
+// 页面公用颜色
+@white: #ffffff;
+// 白色
+@pink: #e93d6d;
+//粉红色
+@red: #c5023a;
+// 红色
+@lightgrey: #aeaeae;
+//浅灰色
+@gray: #666666;
+//灰色
+@origin: #ff6500;
+// 橙色
+
+.fontSize-18 {
+  font-size: 18px;
+}
+.fontSize-16 {
+  font-size: 16px;
+}
+.fontSize-15 {
+  font-size: 15px;
+}
+.fontSize-14 {
+  font-size: 14px;
+}
+.fontSize-12 {
+  font-size: 12px;
+}
+.fontStrong {
+  font-size: 24px;
+  font-weight: bold;
+}
+// 页面公用字体大小
+.font-weight-bold {
+  font-weight: bold;
+}
+.font-weight-bolder {
+  font-weight: bolder;
+}
+
+// 字体宽度
+
+.margin-left-12 {
+  margin-left: 12px;
+}
+.margin-left-13 {
+  margin-left: 13px;
+}
+.margin-left-14 {
+  margin-left: 14px;
+}
+.margin-left-15 {
+  margin-left: 15px;
+}
+.margin-left-20 {
+  margin-left: 20px;
+}
+.margin-left-30 {
+  margin-left: 30px;
+}
+
+.margin-bottom-12 {
+  margin-bottom: 12px;
+}
+.margin-bottom-13 {
+  margin-bottom: 13px;
+}
+.margin-bottom-14 {
+  margin-bottom: 14px;
+}
+.margin-bottom-15 {
+  margin-bottom: 15px;
+}
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+// 外边距
+
+.padding-y-10 {
+  padding: 10px 0px;
+}
+.padding-y-15 {
+  padding: 15px 0px;
+}
+.padding-y-20 {
+  padding: 20px 0px;
+}
+.padding-y-25 {
+  padding: 25px 0px;
+}
+.padding-y-30 {
+  padding: 30px 0px;
+}
+
+.padding-x-10 {
+  padding: 0px 10px;
+}
+.padding-x-15 {
+  padding: 0px 15px;
+}
+.padding-x-20 {
+  padding: 0px 20px;
+}
+.padding-x-25 {
+  padding: 0px 25px;
+}
+.padding-x-30 {
+  padding: 0px 30px;
+}
+
+// 内边距
+
+.a-hover-pink {
+  transition: 0.4s all;
+  -moz-transition: 0.4s all;
+  -webkit-transition: 0.4s all;
+  -ms-transition: 0.4s all;
+}
+.a-hover-pink:hover {
+  color: @pink;
 }
 // a标签悬浮字体变红
-.a-hover-origin{
-	transition: 0.4s all;
-	-moz-transition: 0.4s all;
-	-webkit-transition: 0.4s all;
-	-ms-transition: 0.4s all;
+.a-hover-origin {
+  transition: 0.4s all;
+  -moz-transition: 0.4s all;
+  -webkit-transition: 0.4s all;
+  -ms-transition: 0.4s all;
 }
-.a-hover-origin:hover{
-	color: @origin;
+.a-hover-origin:hover {
+  color: @origin;
+}
 
-}
 // a标签悬浮字体变橘色
 
-.li-hover-shadow{
-	transition: 0.4s all;
-	-moz-transition: 0.4s all;
-	-webkit-transition: 0.4s all;
-	-ms-transition: 0.4s all;
-	border: 1px solid white;
-	}
-.li-hover-shadow:hover{
-	border-color: #c8c8c8;
-    box-shadow: 0 0 8px #ccc;
-	-moz-box-shadow: 0 0 8px #ccc;
-	-webkit-box-shadow: 0 0 8px #ccc;
-	-ms-box-shadow: 0 0 8px #ccc;
+.a-bg-hover {
+  background-color: #e50150;
+  transition: 0.4s all;
+  -moz-transition: 0.4s all;
+  -webkit-transition: 0.4s all;
+  -ms-transition: 0.4s all;
+}
+.a-bg-hover:hover {
+  background-color: #fe0259;
+  color: white;
+}
+
+.li-hover-shadow {
+  transition: 0.4s all;
+  -moz-transition: 0.4s all;
+  -webkit-transition: 0.4s all;
+  -ms-transition: 0.4s all;
+  border: 1px solid white;
+}
+.li-hover-shadow:hover {
+  border-color: #c8c8c8;
+  box-shadow: 0 0 8px #ccc;
+  -moz-box-shadow: 0 0 8px #ccc;
+  -webkit-box-shadow: 0 0 8px #ccc;
+  -ms-box-shadow: 0 0 8px #ccc;
 }
 // 悬浮出现边框和阴影
 
-
-.li-transform-top{
-	transition: 0.4s all;
-	-moz-transition: 0.4s all;
-	-webkit-transition: 0.4s all;
-	-ms-transition: 0.4s all;
-
+.li-transform-top {
+  transition: 0.4s all;
+  -moz-transition: 0.4s all;
+  -webkit-transition: 0.4s all;
+  -ms-transition: 0.4s all;
 }
-.li-transform-top:hover{
-	transform:translateY(-10px);
-	-moz-transform:translateY(-10px);
-	-webkit-transform:translateY(-10px);
-	-ms-transform:translateY(-10px);
+
+.li-transform-top:hover {
+  transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
 }
 // 鼠标触摸向上悬浮
 
-
-.div-mask-transform em{
-
+.hover-bg-pink {
 }
+.hover-bg-pink:hover {
+  background-color: @pink;
+}
+// 鼠标悬浮背景变粉红色
+
+.input-bg-purple-hover {
+  background-color: #8975b4;
+  color: #fff;
+}
+.input-bg-purple-hover:hover {
+  background-color: #8d72b7;
+  color: #fff;
+}
+// 鼠标悬浮背景变深紫色
