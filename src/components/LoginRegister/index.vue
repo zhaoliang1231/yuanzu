@@ -2,9 +2,13 @@
   <!--登录注册页面-->
   <div>
     <div class="login_bar">
-        <span>主页</span>
+        <span>
+            <a class="a-hover-pink" href="">主页</a>
+        </span>
         <span>></span>
-        <span>登录/注册</span>
+        <span>
+            <a class="a-hover-pink" href="">登录/注册</a>
+        </span>
     </div>
   </div>
 </template>
