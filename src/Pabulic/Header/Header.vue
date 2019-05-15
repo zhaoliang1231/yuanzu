@@ -10,6 +10,7 @@ export default {
 
 <style scoped>
   .top-nav{
-    color: red;
+    height: 24px;
+    background: ;
   }
 </style>
