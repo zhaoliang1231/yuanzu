@@ -1,5 +1,5 @@
 <template>
-  <div class="top-nav">kjkdf</div>
+  <div class="top-nav">sadasd</div>
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
 </script>
 
 <style scoped>
-a{
-  color: #000;
-}
+  .top-nav{
+    color: red;
+  }
 </style>
