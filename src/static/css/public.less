@@ -1,0 +1,86 @@
+*{
+	font-family: "微软雅黑";
+	box-sizing: border-box;
+	font-size: 12px;
+	color: #333;
+}
+
+ul{
+	list-style: none;
+}
+
+
+
+@white:#ffffff;//白色
+@pink:#e93d6d;//粉红色
+@lightgrey:#aeaeae;//浅灰色
+@gray:#666666;//灰色
+@origin:#ff6500;
+
+a{
+	color: #4f4f4f;
+	text-decoration: none;
+}
+#content-fuild{
+	padding:0px 75px;
+}
+// 所有的页面最外部用content-fuild装着
+
+.a-hover-pink{
+	transition: 0.4s all;
+	-moz-transition: 0.4s all;
+	-webkit-transition: 0.4s all;
+	-ms-transition: 0.4s all;
+}
+.a-hover-pink:hover{
+	color: @pink;
+}
+// a标签悬浮字体变红
+.a-hover-origin{
+	transition: 0.4s all;
+	-moz-transition: 0.4s all;
+	-webkit-transition: 0.4s all;
+	-ms-transition: 0.4s all;
+}
+.a-hover-origin:hover{
+	color: @origin;
+
+}
+// a标签悬浮字体变橘色
+
+.li-hover-shadow{
+	transition: 0.4s all;
+	-moz-transition: 0.4s all;
+	-webkit-transition: 0.4s all;
+	-ms-transition: 0.4s all;
+	border: 1px solid white;
+	}
+.li-hover-shadow:hover{
+	border-color: #c8c8c8;
+    box-shadow: 0 0 8px #ccc;
+	-moz-box-shadow: 0 0 8px #ccc;
+	-webkit-box-shadow: 0 0 8px #ccc;
+	-ms-box-shadow: 0 0 8px #ccc;
+}
+// 悬浮出现边框和阴影
+
+
+.li-transform-top{
+	transition: 0.4s all;
+	-moz-transition: 0.4s all;
+	-webkit-transition: 0.4s all;
+	-ms-transition: 0.4s all;
+	
+}
+.li-transform-top:hover{
+	transform:translateY(-10px);
+	-moz-transform:translateY(-10px);
+	-webkit-transform:translateY(-10px);
+	-ms-transform:translateY(-10px);
+}
+// 鼠标触摸向上悬浮
+
+
+.div-mask-transform em{
+	
+}
