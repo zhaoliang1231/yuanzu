@@ -3,7 +3,7 @@
 import sendAxios from './axios'
 
 let  getList = function () {
-  
+
 }
 
 export {
