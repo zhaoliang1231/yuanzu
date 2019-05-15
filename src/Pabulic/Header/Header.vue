@@ -1,5 +1,5 @@
 <template>
-  <div class="top-nav">sadasd</div>
+  <div class="top-nav">asd</div>
 </template>
 
 <script>
@@ -10,7 +10,6 @@ export default {
 
 <style scoped>
   .top-nav{
-    height: 24px;
-    background: ;
+    color: red;
   }
 </style>

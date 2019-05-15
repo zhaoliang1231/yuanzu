@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="content-fuild">
+    <div class="content-fuild">
       <Header/>
     </div>
   </div>
