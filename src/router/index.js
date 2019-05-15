@@ -10,12 +10,12 @@ export default new Router({
     {
       path: '/',
       name: 'Index',
-      component:Index
+      component: Index
     },
     {
       path:'/login',
       name:'Login',
-      component:Login
+      component: Login
     }
   ]
 })

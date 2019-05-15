@@ -1,21 +1,19 @@
 <template>
-  <div class="app">
-    <div class="ccc"></div>
+  <div id="app">
+    <div id="content-fuild">
+      <Header/>
+    </div>
   </div>
 </template>
 
 <script>
+import Header from './Pabulic/Header/Header.vue'
 export default {
-  name: 'App'
-
+ 
+  name: 'App',
+  components: {Header}
 }
 </script>
 
 <style lang="less">
-.app {
-  .ccc {
-    padding:  0 30px;
-  }
-}
-
 </style>
