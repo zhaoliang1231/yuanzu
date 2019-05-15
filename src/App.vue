@@ -2,6 +2,7 @@
   <div id="app">
     <div class="content-fuild">
       <Header/>
+        <router-view></router-view>
     </div>
   </div>
 </template>
