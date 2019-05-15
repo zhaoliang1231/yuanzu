@@ -1,5 +1,5 @@
 <template>
-  <div class="top-nav">asd</div>
+  <div class="top-nav"></div>
 </template>
 
 <script>
@@ -8,8 +8,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="less">
+  @import '../../static/css/common.less';
   .top-nav{
-    color: red;
+    height: 24px;
+    background: @lightgrey1;
   }
 </style>
