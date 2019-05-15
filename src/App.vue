@@ -1,15 +1,18 @@
 <template>
   <div id="app">
-
+    <div id="content-fuild">
+      <Header/>
+    </div>
   </div>
 </template>
 
 <script>
+import Header from './Pabulic/Header/Header.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {Header}
 }
 </script>
 
-<style>
-
+<style lang="less">
 </style>
