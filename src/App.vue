@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-
+  <div class="app">
+    <div class="ccc"></div>
   </div>
 </template>
 
@@ -11,6 +11,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
+.app {
+  .ccc {
+    padding:  0 30px;
+  }
+}
 
 </style>
