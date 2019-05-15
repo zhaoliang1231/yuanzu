@@ -2,14 +2,14 @@
   <!--登录注册页面-->
   <div>
     <div>
-      
+
     </div>
   </div>
 </template>
 
 <script>
     export default {
-        name: "index"
+        name: 'index'
     }
 </script>
 
