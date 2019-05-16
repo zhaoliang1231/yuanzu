@@ -16,7 +16,7 @@ import Banner from './Pabulic/Header/Banner.vue'
 import LogoAndSearch from './Pabulic/Header/LogoAndSearch.vue'
 import MainNav from './Pabulic/Header/MainNav.vue'
 export default {
-  name: 'App',
+  name:  'App',
   components: {Header, Banner, LogoAndSearch, MainNav}
 }
 </script>

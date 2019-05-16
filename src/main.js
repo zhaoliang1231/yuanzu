@@ -18,6 +18,6 @@ new Vue({
   el: '#app',
   router,
   axios,
-  components: { App },
+  components: { App }, 
   template: '<App/>'
 })

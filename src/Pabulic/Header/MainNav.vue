@@ -7,7 +7,7 @@
         </div>
         <ul v-if="toggle" class="classify-lists">
           <li @mouseenter="submenuToggle(1,true)" @mouseleave="submenuToggle(false)" class="classify-list">
-            <span>母婴用品</span>
+            <span>母婴用品</span> 
             <span class="icon icon-triangle fr"></span>
           </li>
           <li @mouseenter="submenuToggle(1,true)" @mouseleave="submenuToggle(false)" class="classify-list">
