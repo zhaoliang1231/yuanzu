@@ -5,6 +5,7 @@ import Index from '../components/Index/Index'
 
 import Login from '../components/LoginRegister/index'
 
+
 Vue.use(Router)
 
 export default new Router({
@@ -18,7 +19,7 @@ export default new Router({
     {
      path: '/login',
      name: 'Login',
-     component: Login
+     component: Login,
     }
   ]
 })
