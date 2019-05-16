@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-
 import Index from '../components/Index/Index'
-
 import Login from '../components/LoginRegister/index'
 // 陈-----会员中心--start
 import MemberCenter from '../components/MemberCenter/PersonalCenter/index.vue'
@@ -16,20 +14,27 @@ import CollectionList from '../components/MemberCenter/ShopCenter/CollectionList
 import OrderList from '../components/MemberCenter/ShopCenter/OrderList/index.vue'
 // 陈----会员中心--end
 
+import Settlement from '../components/Settlement/index'
+
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
   routes: [
     {
-     path: '/',
-     name: 'Index',
-     component: Index
+      path: '/',
+      name: 'Index',
+      component: Index
     },
     {
-     path: '/login',
-     name: 'Login',
-     component: Login
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/settlement',
+      name: 'Settlement',
+      component: Settlement
     },
     // 陈-----会员中心--start
     {
