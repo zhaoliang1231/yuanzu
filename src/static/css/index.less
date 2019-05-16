@@ -83,6 +83,7 @@
     .classify-lists{
       width:100%;
       position: absolute;
+      display: none;
       .classify-list{
         height: 53px;
         line-height: 53px;
@@ -297,6 +298,7 @@
 
 
 //赵亮
+//登录页面css
 .login_bar{
   width: 100%;
   height: 40px;
@@ -311,8 +313,9 @@
   box-shadow:1px 1px 3px #333333;
 }
 .password_box{
+  padding-top: 10px;
   width: 100%;
-  height: 30px;
+  height: 50px;
   line-height: 30px;
   .member_pwd{
     float: left;
@@ -321,8 +324,37 @@
     float: right;
   }
 }
-
-
+//注册页面css
+.agree_reg_box{
+  padding-top: 10px;
+  width: 100%;
+  height: 50px;
+  line-height: 30px;
+  .agree_reg_agreement{
+    float: left;
+  }
+  .reg_agreement{
+    float: right;
+    span{
+      text-decoration: underline;
+    }
+  }
+}
+.yanzheng_btn{
+  display: inline-block;
+  font-size: 14px;
+  background-color: #8975B4;
+  width: 120px;
+  float: right;
+  color: @white;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border: none;
+  outline:none;
+  cursor: pointer;
+  font-weight: normal;
+}
 
 
 

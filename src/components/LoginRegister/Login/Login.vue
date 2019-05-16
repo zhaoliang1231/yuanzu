@@ -1,10 +1,10 @@
 <template>
     <div>
-        <el-form class="login" :model="loginForm" :rules="rules" ref="loginForm">
+        <el-form class="login" :model="loginForm" status-icon :rules="rules" ref="loginForm">
             <el-form-item label="邮箱或手机号：" prop="user_phone">
-                <el-input v-model="loginForm.user_phone"></el-input>
+                <el-input placeholder="邮箱/手机号"  v-model="loginForm.user_phone"></el-input>
             </el-form-item>
-            <el-form-item label="密码" prop="user_password">
+            <el-form-item label="密码:" prop="user_password">
                 <el-input type="password" v-model="loginForm.user_password" autocomplete="off"></el-input>
             </el-form-item>
             <div class="password_box">
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <el-form-item>
-                <el-button style="width:100%" type="primary" @click="login('loginForm')">登录</el-button>
+                <el-button style="width:100%;color:#ffffff;" type="primary" @click="login('loginForm')">登录</el-button>
             </el-form-item>
         </el-form>
     </div>
@@ -48,6 +48,7 @@
        },
        rules: {
         user_phone: [
+         //电话验证
          { required: true, validator: validatePhone, trigger: 'blur' }
         ],
         user_password: [
@@ -55,22 +56,47 @@
         ]
        }
       }
-     }
+     },
+        methods: {
+            login(formName) {
+                this.$refs[formName].validate((valid) => {
+                    if (valid) {
+                        alert('submit!');
+                    } else {
+                        console.log('error submit!!');
+                        return false;
+                    }
+                });
+            }
+        }
     }
 </script>
 
 <style scoped lang="less">
-.login{
+    @import "../../../static/css/common";
+    .login{
     width: 370px;
     margin: 0 auto;
 }
-    /deep/.el-form-item__label{
-        /*line-height: 0;*/
+    .el-form-item{
+        margin-bottom: 18px;
     }
-/deep/.el-form-item{
-    margin-bottom: 0;
-}
 .el-button{
-  /*margin-top: 20px;*/
+    margin: 0 0 20px 0;
+    background: #8975B4;
+    border: 1px #fff solid;
+    /deep/span{
+        display: inline-block;
+        font-size: 14px;
+        color:@white;
+    }
 }
+    /deep/.el-input__inner{
+        height: 38px;
+        border-radius: 2px;
+    }
+    /deep/.el-form-item__label{
+        line-height: 25px;
+        color: @fontColor;
+    }
 </style>
