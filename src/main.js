@@ -6,8 +6,8 @@ import router from './router'
 import axios from 'axios'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import Public from './static/css/public.less'
-import Index from './static/css/index.less'
+import Public from 'static/css/public.less'
+import Index from 'static/css/index.less'
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(Public)
@@ -18,6 +18,6 @@ new Vue({
   el: '#app',
   router,
   axios,
-  components: { App },
+  components: { App }, 
   template: '<App/>'
 })
