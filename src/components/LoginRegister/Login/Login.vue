@@ -1,24 +1,24 @@
 <template>
     <div>
         <el-form class="login" :model="loginForm" :rules="rules" ref="loginForm">
-            <el-form-item label="ÓÊÏä»òÊÖ»úºÅ£º" prop="user_phone">
+            <el-form-item label="é‚®ç®±æˆ–æ‰‹æœºå·ï¼š" prop="user_phone">
                 <el-input v-model="loginForm.user_phone"></el-input>
             </el-form-item>
-            <el-form-item label="ÃÜÂë" prop="user_password">
+            <el-form-item label="å¯†ç " prop="user_password">
                 <el-input type="password" v-model="loginForm.user_password" autocomplete="off"></el-input>
             </el-form-item>
             <div class="password_box">
                 <div class="member_pwd">
-                    <el-checkbox v-model="checked">¼Ç×¡ÃÜÂë</el-checkbox>
+                    <el-checkbox v-model="checked">è®°ä½å¯†ç </el-checkbox>
                 </div>
                 <div class="forget_pwd">
                     <span>
-                        <a class="a-hover-pink" href="">Íü¼ÇÃÜÂë?</a>
+                        <a class="a-hover-pink" href="">å¿˜è®°å¯†ç ?</a>
                     </span>
                 </div>
             </div>
             <el-form-item>
-                <el-button style="width:100%" type="primary" @click="login('loginForm')">µÇÂ¼</el-button>
+                <el-button style="width:100%" type="primary" @click="login('loginForm')">ç™»å½•</el-button>
             </el-form-item>
         </el-form>
     </div>
@@ -30,11 +30,11 @@
      data () {
       var validatePhone = (rule, value, callback) => {
        if (value === '') {
-        callback(new Error('ÇëÊäÈëÁªÏµµç»°'))
+        callback(new Error('è¯·è¾“å…¥è”ç³»ç”µè¯'))
        } else {
         var reg = /^1[34578]\d{9}$/
         if (reg.test(value) === false) {
-         callback(new Error('ÇëÊäÈëÕıÈ·µÄµç»°ºÅÂë'))
+         callback(new Error('è¯·è¾“å…¥æ­£ç¡®çš„ç”µè¯å·ç '))
         } else {
          callback()
         }
@@ -51,7 +51,7 @@
          { required: true, validator: validatePhone, trigger: 'blur' }
         ],
         user_password: [
-         { required: true, message: 'ÇëÊäÈëÃÜÂë', trigger: 'blur' }
+         { required: true, message: 'è¯·è¾“å…¥å¯†ç ', trigger: 'blur' }
         ]
        }
       }
