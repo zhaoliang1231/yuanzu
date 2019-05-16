@@ -10,35 +10,23 @@
             <a class="a-hover-pink" href="">登录/注册</a>
         </span>
     </div>
-      <div class="login_title">
+      <div class="Z_login_title">
           <el-tabs v-model="activeName" @click="handleClick">
-              <el-tab-pane label="登录" name="first" class="login_tab">
-                  <Login></Login>
-              </el-tab-pane>
-              <el-tab-pane label="注册" name="second">
-                  <Register></Register>
-              </el-tab-pane>
-
+              <el-tab-pane label="登录" name="first">登录</el-tab-pane>
+              <el-tab-pane label="注册" name="second">注册</el-tab-pane>
           </el-tabs>
       </div>
   </div>
 </template>
 
 <script>
-    import Login from './Login/Login'
-    import Register from './Register/Register'
-
-    export default {
+export default {
 name: 'index',
  data () {
     return {
      activeName: 'first'
     }
  },
-     components:{
-      Login,
-      Register
-     },
  methods:{
   handleClick(tab, event) {
 
@@ -48,26 +36,5 @@ name: 'index',
 </script>
 
 <style scoped lang="less">
-@import "../../static/css/common";
-
-/deep/.el-tabs__nav{
-   margin-left: 500px;
-}
-/deep/.el-tabs__item.is-active{
-    color:#333;
-}
-/deep/.el-tabs__item:hover{
-    color: #333;
-}
-//选项卡移动线
-/deep/.el-tabs__active-bar{
-    border-bottom: 2px solid #848484;
-
-}
-/deep/.el-tabs__item{
-    font-size: 16px;
-    color: @fontColor;
-}
-
 
 </style>
