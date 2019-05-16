@@ -1,13 +1,14 @@
 <template>
-
+<div>sdsadsa</div>
 </template>
-
 <script>
-    export default {
-        name: 'index'
-    }
+export default {
+}
 </script>
 
-<style scoped>
-
+<style lang="less" scoped>
+  @import "~static/css/common.less";
+div{
+  color: @pink;
+}
 </style>
