@@ -9,7 +9,7 @@
         <a class="search-btn">搜索</a>
       </div>
       <div class="search-text ">
-        <span class="font-color-lightgrey">热门搜索：</span> 
+        <span class="font-color-lightgrey">热门搜索：</span>
         <router-link to="/">
           <span class="font-color-lightgrey">元祖梦蛋糕</span>
         </router-link>

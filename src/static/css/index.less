@@ -12,7 +12,7 @@
     img{
       width:100%
     }
-  } 
+  }
 }
 .he-banner{
   width:100%;
@@ -67,82 +67,82 @@
   }
 }
 //主导航
-.main-nav{
+.mn-main-nav{
   height: 42px;
   line-height: 40px;
   width:1200px;
   border-bottom: 2px solid @red;
-  .main-nav-classify{
-    width: 200px;
+  //导航下拉菜单
+  .mn-main-nav-classify{
+    width: 225px;
     position: relative;
     background:#e9004f;
-    .classify-name{
+    .mn-classify-name{
       width:100%;
       text-align: center;
+      cursor: pointer;
     }
-    .classify-lists{
+    .mn-classify-lists{
       width:100%;
       position: absolute;
-      display: none;
-      .classify-list{
-        height: 53px;
-        line-height: 53px;
-        background: @red;
-        border: 1px solid @red;
-        padding-left: 30px;
-        &:hover{
-          background: @red;
-        }
-        .fright{
-          margin-top: 20px;
-          margin-right:20px;
-        }
-      }
-    }
-    .classify-list-submenu{
-      width:722px;
-      height: 306px;
-      position: absolute;
-      border: 1px solid #ff7011;
-      left: 200px;
-      line-height: 22px;
-      background: #fff;
-      .submenu-content{
-        width:304px;
-        height: 70px;
-        margin-top: 10px;
-        margin-left: 30px;
-        overflow: hidden;
-        .submenu-title{
-          color: #000;
-          font-size: 14px;
-        }
-        .hr{
-          width:230px;
+      padding: 0px;
+      top: 42px;
+      background: @white;
+      line-height: 24px;
+      .mn-classify-list{
+        min-height: 53px;
+        padding-left: 32px;
+        border-bottom: 1px solid #ccc;
+        .mn-classify-list-title{
           display: block;
-          border: .5px solid #eaeaea;
         }
-        .commoditylink{
-          width:100%;
-          font-size: 12px;
-          color: @lightgrey;
-          a{
-            color:@lightgrey;
-            &:focus{
-              color: red;
-            }
-          }
+        .mn-classify-list-submenu{
+          width:722px;
+          height: 306px;
+          position: absolute;
+          border: 1px solid #ff7011;
+          left: 200px;
+          line-height: 22px;
+          background: #fff;
         }
       }
     }
   }
-  .main-nav-list{
+  .mn-main-nav-list{
     width: 200px;
     position: relative;
     text-align: center;
-    a{
-      color: #fff;
-    }
+  }
+  .mn-a:hover{
+    color:red;
+  }
+}
+//底部
+.footer{
+  height: 300px;
+  border-top:5px solid red;
+  margin-top: 25px;
+  text-align: center;
+  .footer-img{
+    margin: 20px 0px;
+  }
+}
+//侧导航
+.FloatBar-box{
+  width: 37px;
+  height: 100%;
+  background: #444851;
+  position: fixed;
+  right: 0;
+}
+.FloatBar-cart{
+  text-align: center;
+  margin: 5px 10px;
+  .yuan{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: red;
   }
 }
 /*袁峰End*/

@@ -1,10 +1,10 @@
 <template>
-    <div class="he-banner">
-      <img :src="banner"/>
-    </div>
+  <div class="he-banner">
+    <img :src="banner"/>
+  </div>
 </template>
 <script>
-import banner from 'static/img/hebanner.jpg' 
+import banner from 'static/img/hebanner.jpg'
 export default {
   data () {
     return {
