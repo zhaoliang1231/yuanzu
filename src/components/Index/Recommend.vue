@@ -4,7 +4,7 @@
         <el-tabs v-model="activeName" @tab-click="handleClick">
           <el-tab-pane label="元祖新品" name="first">
             <div class="home-goods-lists clearfix">
-              <div class="home-goods-list li-hover-shadow fl">
+              <div class="home-goods-list li-hover-shadow fl"> 
                 <router-link to="">
                   <img title="8号溪云初起巧克力蛋糕" src="~static/img/testimg1.jpg"/>
                   <span class="fontSize-14 mn-a">溪云初起巧克力蛋糕</span>

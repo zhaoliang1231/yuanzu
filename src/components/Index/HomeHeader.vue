@@ -2,7 +2,7 @@
     <div class="home-header clearfix">
       <div class="home-banner fl">
         <el-carousel height="438px" indicator-position="outside">
-          <el-carousel-item v-for="item in banner" :key="item">
+          <el-carousel-item v-for="item in banner" :key="item"> 
             <img :src="item"/>
           </el-carousel-item>
         </el-carousel>

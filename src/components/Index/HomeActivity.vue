@@ -9,7 +9,7 @@
         </li>
         <li class="home-activity-theme fl">
           <router-link to="">
-            <img src="~static/img/huodong2.jpg"/>
+            <img src="~static/img/huodong2.jpg"/> 
           </router-link>
         </li>
         <li class="home-activity-theme fl">

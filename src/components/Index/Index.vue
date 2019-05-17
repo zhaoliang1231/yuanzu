@@ -3,7 +3,7 @@
       <HomeHeader/>
       <Recommend/>
       <HomeConten/>
-      <HomeConten/>
+      <HomeConten/> 
       <HomeConten/>
       <HomeActivity/>
     </div>

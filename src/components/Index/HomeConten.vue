@@ -6,7 +6,7 @@
         <ul class="fr">
           <li class=" home-conten-nav-name fl">
             <router-link to="">
-              <span class="font-color-lightgrey mn-a"> 鲜奶蛋糕</span>
+              <span class="font-color-lightgrey mn-a"> 鲜奶蛋糕</span> 
             </router-link>
             |
           </li>

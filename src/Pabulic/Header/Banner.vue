@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-import banner from 'static/img/hebanner.jpg'
+import banner from 'static/img/hebanner.jpg' 
 export default {
   data () {
     return {
