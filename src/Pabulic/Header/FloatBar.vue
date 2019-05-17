@@ -9,7 +9,8 @@
         </div>
         <div class="FloatBar-nav-list">
           <div class="ico ico-cart"></div>
-          <div class="FloatBar-cart font-color-white fontSize-14">购物车</div>
+          <div class="FloatBar-cart font-color-white fontSize-14">购物车</div> 
+          <div class="yuan">0</div>
         </div>
         <div class="FloatBar-nav-list">
           <div class="ico ico-star"></div>
@@ -20,5 +21,6 @@
 <script>
 export default {}
 </script>
-<style>
+<style lang="less">
+
 </style>
