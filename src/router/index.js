@@ -19,7 +19,8 @@ import OrderList from '../components/MemberCenter/ShopCenter/OrderList/index.vue
 // 陈----会员中心--end
 
 import Settlement from '../components/Settlement/index'
-
+import ShopCart from '../components/Settlement/ShopCart/ShopCart'
+import FillOrder from '../components/Settlement/FillOrder/FillOrder'
 Vue.use(Router)
 
 export default new Router({
@@ -35,10 +36,24 @@ export default new Router({
       name: 'Login',
       component: Login
     },
+	// 购物车流程
     {
       path: '/settlement',
       name: 'Settlement',
-      component: Settlement
+      component: Settlement,
+      redirect: '/settlement/shopcart',
+      children:[
+        {
+          path:'shopcart',
+          name:'shopcart',
+          component:ShopCart
+        },
+        {
+          path:'fillorder',
+          name:'fillorder',
+          component:FillOrder
+        }
+      ]
     },
     // 陈-----会员中心--start
     {
