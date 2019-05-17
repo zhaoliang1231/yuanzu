@@ -2,6 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '../components/Index/Index'
 import Login from '../components/LoginRegister/index'
+// 公告页面
+import Notice from '../components/Notice/index'
+// 详情页
+import Detail from '../components/Detail/index'
 // 陈-----会员中心--start
 import MemberCenter from '../components/MemberCenter/PersonalCenter/index.vue'
 import PersonalData from '../components/MemberCenter/PersonalCenter/PersonalData/index.vue'
@@ -89,7 +93,19 @@ export default new Router({
       name: 'CollectionList',
       path: '/MemberCenter/ShopCenter/CollectionList',
       component: CollectionList
-    }
+    },
     // 陈----会员中心--end
+    // 公告页面
+    {
+      name: 'Notice',
+      path: '/Notice',
+      component: Notice
+    },
+    // 详情页
+    {
+      name:'Detail',
+      path:'/Detail',
+      component:Detail
+    }
   ]
 })
