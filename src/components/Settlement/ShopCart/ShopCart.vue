@@ -25,7 +25,7 @@
           <span class="font-weight-bold">¥258.00</span>
       </div>
       <div class="">
-          
+          s
       </div>
     </li>
   </ul>

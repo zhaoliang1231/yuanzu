@@ -29,7 +29,7 @@
     //   '$route.path': function (newVal, oldVal) {
     //     if (newVal === '/settlement') {
     //       console.log(newVal);
-    //     }
+    //   s  }
     //   }
     // },
     mounted: function () {
