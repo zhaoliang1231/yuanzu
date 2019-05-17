@@ -6,6 +6,10 @@ import Login from '../components/LoginRegister/index'
 import Notice from '../components/Notice/index'
 // 详情页
 import Detail from '../components/Detail/index'
+// 详情页里 商品介绍
+import introduction from '../components/Detail/Introduction/introduction'
+// 详情页里 商品评论
+import evaluate from '../components/Detail/Evaluate/evaluate'
 // 陈-----会员中心--start
 import MemberCenter from '../components/MemberCenter/index.vue'
 import PersonalData from '../components/MemberCenter/PersonalCenter/PersonalData/index.vue'
@@ -118,9 +122,24 @@ export default new Router({
     },
     // 详情页
     {
-      name:'Detail',
-      path:'/Detail',
-      component:Detail
+      name: 'detail',
+      path: '/detail',
+      component: Detail,
+      children: [
+        // 商品介绍
+        {
+          path: '',
+          name: 'introduction',
+          component: introduction
+        },
+        // 商品评价
+        {
+          path: 'evaluate',
+          name: 'evaluate',
+          component: evaluate
+        }
+      ]
     }
+    //
   ]
 })
