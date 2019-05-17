@@ -25,6 +25,7 @@ import OrderList from '../components/MemberCenter/ShopCenter/OrderList/index.vue
 import Settlement from '../components/Settlement/index'
 import ShopCart from '../components/Settlement/ShopCart/ShopCart'
 import FillOrder from '../components/Settlement/FillOrder/FillOrder'
+import SubmitSuccess from '../components/Settlement/SubmitSuccess/SubmitSuccess'
 Vue.use(Router)
 
 export default new Router({
@@ -56,6 +57,11 @@ export default new Router({
           path: 'fillorder',
           name: 'fillorder',
           component: FillOrder
+        },
+		{
+          path: 'submitsuccess',
+          name: 'submitsuccess',
+          component: SubmitSuccess
         }
       ]
     },
