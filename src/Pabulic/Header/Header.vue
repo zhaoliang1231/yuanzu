@@ -1,15 +1,15 @@
 <template>
   <div class="he-top-nav clearfix">
     <router-link to="/">
-      <div class="he-top-nav-list fr">¹ºÎï³µ</div>
+      <div class="he-top-nav-list fr">è´­ç‰©è½¦</div>
     </router-link>
     <span class="fr">|</span>
     <router-link to="/">
-      <div class="he-top-nav-list fr">»áÔ±ÖÐÐÄ</div>
+      <div class="he-top-nav-list fr">ä¼šå‘˜ä¸­å¿ƒ</div>
     </router-link>
     <span class="fr">|</span>
     <router-link to="/">
-      <div class="he-top-nav-list fr">µÇÂ¼/×¢²á</div>
+      <div class="he-top-nav-list fr">ç™»å½•/æ³¨å†Œ</div>
     </router-link>
   </div>
 </template>
