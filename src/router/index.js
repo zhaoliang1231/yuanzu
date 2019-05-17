@@ -2,8 +2,12 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Index from '../components/Index/Index'
 import Login from '../components/LoginRegister/index'
+// 公告页面
+import Notice from '../components/Notice/index'
+// 详情页
+import Detail from '../components/Detail/index'
 // 陈-----会员中心--start
-import MemberCenter from '../components/MemberCenter/PersonalCenter/index.vue'
+import MemberCenter from '../components/MemberCenter/index.vue'
 import PersonalData from '../components/MemberCenter/PersonalCenter/PersonalData/index.vue'
 import Invoice from '../components/MemberCenter/PersonalCenter/Invoice/index.vue'
 import ReceivingAddress from '../components/MemberCenter/PersonalCenter/ReceivingAddress/index.vue'
@@ -15,7 +19,8 @@ import OrderList from '../components/MemberCenter/ShopCenter/OrderList/index.vue
 // 陈----会员中心--end
 
 import Settlement from '../components/Settlement/index'
-
+import ShopCart from '../components/Settlement/ShopCart/ShopCart'
+import FillOrder from '../components/Settlement/FillOrder/FillOrder'
 Vue.use(Router)
 
 export default new Router({
@@ -31,10 +36,24 @@ export default new Router({
       name: 'Login',
       component: Login
     },
+	  // 购物车流程
     {
       path: '/settlement',
       name: 'Settlement',
-      component: Settlement
+      component: Settlement,
+      redirect: '/settlement/shopcart',
+      children: [
+        {
+          path: 'shopcart',
+          name: 'shopcart',
+          component: ShopCart
+        },
+        {
+          path: 'fillorder',
+          name: 'fillorder',
+          component: FillOrder
+        }
+      ]
     },
     // 陈-----会员中心--start
     {
@@ -89,7 +108,19 @@ export default new Router({
       name: 'CollectionList',
       path: '/MemberCenter/ShopCenter/CollectionList',
       component: CollectionList
-    }
+    },
     // 陈----会员中心--end
+    // 公告页面
+    {
+      name: 'Notice',
+      path: '/Notice',
+      component: Notice
+    },
+    // 详情页
+    {
+      name:'Detail',
+      path:'/Detail',
+      component:Detail
+    }
   ]
 })
