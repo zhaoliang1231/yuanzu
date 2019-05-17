@@ -9,7 +9,7 @@
         <a>个人资料</a>
     </div>
   <!--中心内容-->
-    <div class="user-center">
+    <div class="user-center clearfix">
         <div class="user-nav">
             <p>欢迎光临元祖食品</p>
             <p>会员中心</p>
@@ -72,12 +72,36 @@ export default {
 </script>
 <style lang="less" scoped>
   @import "~static/css/common.less";
-  @import "~static/css/index.less";
   /*个人中心*/
+  .memberCenter{
+    //头部
+    .member-header{
+      height: 45px;
+      line-height: 45px;
+    }
+    //  内容
+    .user-center{
+      padding: 0 20px;
+      //  左边导航
+      .user-nav{
+        float: left;
+        width: 181px;
+        padding-top: 8px;
+      }
+      //  右边内容
+      .user-content{
+        float: left;
+        width: 945px;
+        height: 495px;
+        border: 1px solid #c7c7c7;
+        padding: 28px 46px 0;
+      }
+    }
+  }
+
   .personal-center {
     width: 100%;
-    /deep/
-    .el-row{
+    /deep/.el-row{
       .el-col{
         width: 100%;
         .el-submenu__title{

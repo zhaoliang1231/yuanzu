@@ -7,7 +7,7 @@ import Notice from '../components/Notice/index'
 // 详情页
 import Detail from '../components/Detail/index'
 // 陈-----会员中心--start
-import MemberCenter from '../components/MemberCenter/PersonalCenter/index.vue'
+import MemberCenter from '../components/MemberCenter/index.vue'
 import PersonalData from '../components/MemberCenter/PersonalCenter/PersonalData/index.vue'
 import Invoice from '../components/MemberCenter/PersonalCenter/Invoice/index.vue'
 import ReceivingAddress from '../components/MemberCenter/PersonalCenter/ReceivingAddress/index.vue'
@@ -36,22 +36,22 @@ export default new Router({
       name: 'Login',
       component: Login
     },
-	// 购物车流程
+	  // 购物车流程
     {
       path: '/settlement',
       name: 'Settlement',
       component: Settlement,
       redirect: '/settlement/shopcart',
-      children:[
+      children: [
         {
-          path:'shopcart',
-          name:'shopcart',
-          component:ShopCart
+          path: 'shopcart',
+          name: 'shopcart',
+          component: ShopCart
         },
         {
-          path:'fillorder',
-          name:'fillorder',
-          component:FillOrder
+          path: 'fillorder',
+          name: 'fillorder',
+          component: FillOrder
         }
       ]
     },
