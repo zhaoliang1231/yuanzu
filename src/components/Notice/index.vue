@@ -2,11 +2,11 @@
     <div class="index">
         <div class="notice_location">
             <span>
-                <a href="">主页</a>
+                <a class="a-hover-pink" href="">主页</a>
+            </span>
                 <span>></span>
-                <span>
-                    <a href="">元祖公告44(18年中秋月饼销毁公告)</a>
-                </span>
+            <span>
+                <a class="a-hover-pink" href="">元祖公告44(18年中秋月饼销毁公告)</a>
             </span>
         </div>
         <div class="notice_logo">

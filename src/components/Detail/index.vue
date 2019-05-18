@@ -1,15 +1,19 @@
 <template>
     <div>
         <DetailBanner></DetailBanner>
+        <ShopIntroduction></ShopIntroduction>
     </div>
 </template>
 
 <script>
     import DetailBanner from './DetailBanner/DetaiBanner'
-  export default {
+    import ShopIntroduction from './ShopIntroduction/ShopIntroduction'
+
+    export default {
    name: 'Detail',
     components: {
-      DetailBanner
+      DetailBanner,
+      ShopIntroduction
     }
   }
 </script>

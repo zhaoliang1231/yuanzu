@@ -14,6 +14,9 @@ body {
 ul {
   list-style: none;
 }
+em{
+  font-style: normal;
+}
 input {
   outline: none;
 }
@@ -73,6 +76,9 @@ a {
 }
 
 // 字体宽度
+.font-pink{
+  color: @pink;
+}
 .font-color-lightgrey{
   color: @lightgrey;
 }
@@ -167,7 +173,10 @@ a {
   float: right;
 }
 //右浮动
+.text-align-center{
+  text-align:center;
 
+}
 .clearfix:before,.clearfix:after{
   content:"";
   display:table;
@@ -245,9 +254,13 @@ a {
 // 鼠标触摸向上悬浮
 
 .hover-bg-pink {
+  transition: 0.4s all;
+  -moz-transition: 0.4s all;
+  -webkit-transition: 0.4s all;
+  -ms-transition: 0.4s all;
 }
 .hover-bg-pink:hover {
-  background-color: @pink;
+  background-color: #d42928;
 }
 // 鼠标悬浮背景变粉红色
 

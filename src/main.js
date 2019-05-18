@@ -8,10 +8,13 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import Public from './static/css/public.less'
 import Index from './static/css/index.less'
+// 引入放大镜
+import vueMagnify from 'vue-magnify'
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(Public)
 Vue.use(Index)
+Vue.use(vueMagnify)
 
 /* eslint-disable no-new */
 new Vue({
