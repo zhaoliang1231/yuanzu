@@ -125,11 +125,56 @@
     margin: 20px 0px;
   }
 }
+
+
+
+.FloatBar-nav-list {
+  border: 1px solid #666;
+  position: relative;
+  cursor: pointer;
+  .FloatBar-stretch {
+    width: 130px;
+    position: absolute;
+    z-index: 1;
+    left: 38px;
+    overflow: hidden;
+    height: 100%;
+    float: left;
+    -webkit-transition:0.5s all;
+    -moz-transition:0.5s all;
+    -ms-transition:0.5s all;
+    -o-transition:0.5s all;
+    transition:0.5s all;
+    background-color: @pink;
+    top: 0px;
+    line-height: 38px;
+    padding-left: 20px;
+    color: @white ;
+    cursor: pointer;
+    a{
+      color: @white ;
+    }
+
+  }
+}
+
+
+.FloatBar-nav-list:hover{
+  background-color: #EF285F;
+}
+.FloatBar-nav-list:hover .FloatBar-stretch{
+  left: -95px;
+}
+
+
 //侧导航
-.ico{
+.ico {
   background: url('~static/img/iconlist.png') no-repeat;
-  width:34px;
+  width: 34px;
   height: 36px;
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
 }
 .ico-horn{
   background-position: 0 -38px;
