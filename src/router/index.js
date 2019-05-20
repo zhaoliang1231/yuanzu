@@ -77,71 +77,71 @@ export default new Router({
     // 陈-----会员中心--start
     {
       name: 'MemberCenter',
-      path: '/MemberCenter',
+      path: '/memberCenter',
       component: MemberCenter,
       children: [
         {
-          path: 'PersonalCenter/PersonalData',
+          path: 'personalCenter/personalData',
           name: 'PersonalData',
           component: PersonalData
         },
         {
-          path: 'PersonalCenter/EditProfile',
+          path: 'personalCenter/editProfile',
           name: 'EditProfile',
           component: EditProfile
         },
         {
-          path: 'PersonalCenter/AlterEmail',
+          path: 'personalCenter/alterEmail',
           name: 'AlterEmail',
           component: AlterEmail
         },
         {
-          path: 'PersonalCenter/AlterPhone',
+          path: 'personalCenter/alterPhone',
           name: 'AlterPhone',
           component: AlterPhone
         },
         {
-          path: 'PersonalCenter/ChangePassword',
+          path: 'personalCenter/changePassword',
           name: 'ChangePassword',
           component: ChangePassword
         },
         {
-          path: 'PersonalCenter/ElectronicTicket',
+          path: 'personalCenter/electronicTicket',
           name: 'ElectronicTicket',
           component: ElectronicTicket
         },
         {
-          path: 'PersonalCenter/Integral',
+          path: 'personalCenter/integral',
           name: 'Integral',
           component: Integral
         },
         {
-          path: 'PersonalCenter/Invoice',
+          path: 'personalCenter/invoice',
           name: 'Invoice',
           component: Invoice
         },
         {
-          path: 'PersonalCenter/ReceivingAddress',
+          path: 'personalCenter/receivingAddress',
           name: 'ReceivingAddress',
           component: ReceivingAddress
         },
         {
-          path: 'PersonalCenter/AddAddress',
+          path: 'personalCenter/addAddress',
           name: 'AddAddress',
           component: AddAddress
         },
         {
-          path: 'PersonalCenter/OrderList',
+          path: 'personalCenter/orderList',
           name: 'OrderList',
           component: OrderList
         },
         {
-          path: 'ShopCenter/CollectionList',
+          path: 'shopCenter/collectionList',
           name: 'CollectionList',
           component: CollectionList
         },
         {
-          path: 'ShopCenter/Order',
+          path: 'shopCenter/order',
           name: 'Order',
           component: Order
         }
