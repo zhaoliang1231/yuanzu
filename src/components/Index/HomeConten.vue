@@ -6,7 +6,7 @@
         <ul class="fr">
           <li class=" home-conten-nav-name fl">
             <router-link to="">
-              <span class="font-color-lightgrey mn-a"> 鲜奶蛋糕</span> 
+              <span class="font-color-lightgrey mn-a"> 鲜奶蛋糕</span>
             </router-link>
             |
           </li>
@@ -43,7 +43,7 @@
         </div>
         <ul class="fl clearfix">
           <li class="home-modular-goos li-hover-shadow li-transform-top fl">
-            <router-link to="">
+            <router-link to="detail">
               <img title="8号溪云初起巧克力蛋糕" src="~static/img/testimg2.jpg"/>
               <p class="fontSize-18 mn-a">朝羽鲜奶蛋糕</p>
               <p class="mn-a"> 寓意良辰美景， 幸福的时刻</p>
@@ -51,7 +51,7 @@
             </router-link>
           </li>
           <li class="home-modular-goos li-hover-shadow li-transform-top fl">
-            <router-link to="">
+            <router-link to="detail">
               <img title="8号溪云初起巧克力蛋糕" src="~static/img/testimg2.jpg"/>
               <p class="fontSize-18 mn-a">朝羽鲜奶蛋糕</p>
               <p class="mn-a"> 寓意良辰美景， 幸福的时刻</p>
@@ -59,7 +59,7 @@
             </router-link>
           </li>
           <li class="home-modular-goos li-hover-shadow li-transform-top fl">
-            <router-link to="">
+            <router-link to="detail">
               <img title="8号溪云初起巧克力蛋糕" src="~static/img/testimg2.jpg"/>
               <p class="fontSize-18 mn-a">朝羽鲜奶蛋糕</p>
               <p class="mn-a"> 寓意良辰美景， 幸福的时刻</p>

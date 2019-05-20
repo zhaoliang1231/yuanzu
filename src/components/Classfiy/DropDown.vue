@@ -10,29 +10,29 @@
       </div>
 </template>
 <script>
-    export default {
-      props: ['op'],
-      data () {
-        return {
-          isHide: true,
-          toggle: false,
-          pangd: [{name: '价格',describe1: '价格（由低到高）',describe2: '价格（由低到高）'},
-            {name: '销量',describe1: '销量（由低到高）',describe2: '销量（由低到高）'}]
-        }
-      },
-      mounted () {
-        if (!this.isHide) {
-          this.toggle = true
-        }
-      },
-      methods: {
-        classifyToggle (bool) {
-          if (this.isHide) {
-            this.toggle = bool
-          }
-        }
+export default {
+  props: ['op'],
+  data () {
+    return {
+      isHide: true,
+      toggle: false,
+      pangd: [{name: '价格',describe1: '价格（由低到高）',describe2: '价格（由低到高）'},
+        {name: '销量',describe1: '销量（由低到高）',describe2: '销量（由低到高）'}]
+    }
+  },
+  mounted () {
+    if (!this.isHide) {
+      this.toggle = true
+    }
+  },
+  methods: {
+    classifyToggle (bool) {
+      if (this.isHide) {
+        this.toggle = bool
       }
     }
+  }
+}
 </script>
 <style lang="less">
 </style>
