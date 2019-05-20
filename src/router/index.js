@@ -15,11 +15,16 @@ import MemberCenter from '../components/MemberCenter/index.vue'
 import PersonalData from '../components/MemberCenter/PersonalCenter/PersonalData/index.vue'
 import Invoice from '../components/MemberCenter/PersonalCenter/Invoice/index.vue'
 import ReceivingAddress from '../components/MemberCenter/PersonalCenter/ReceivingAddress/index.vue'
+import AddAddress from '../components/MemberCenter/PersonalCenter/AddAddress/index.vue'
 import ChangePassword from '../components/MemberCenter/PersonalCenter/ChangePassword/index.vue'
+import EditProfile from '../components/MemberCenter/PersonalCenter/EditProfile/index.vue'
+import AlterEmail from '../components/MemberCenter/PersonalCenter/AlterEmail/index.vue'
+import AlterPhone from '../components/MemberCenter/PersonalCenter/AlterPhone/index.vue'
 import ElectronicTicket from '../components/MemberCenter/PersonalCenter/ElectronicTicket/index.vue'
 import Integral from '../components/MemberCenter/PersonalCenter/Integral/index.vue'
 import CollectionList from '../components/MemberCenter/ShopCenter/CollectionList/index.vue'
 import OrderList from '../components/MemberCenter/ShopCenter/OrderList/index.vue'
+import Order from '../components/MemberCenter/ShopCenter/Order/index.vue'
 // 陈----会员中心--end
 
 import Settlement from '../components/Settlement/index'
@@ -73,55 +78,74 @@ export default new Router({
     {
       name: 'MemberCenter',
       path: '/MemberCenter',
-      component: MemberCenter
-    },
-    // 个人资料
-    {
-      name: 'PersonalData',
-      path: '/MemberCenter/PersonalCenter/PersonalData',
-      component: PersonalData
-    },
-    // 更改密码
-    {
-      name: 'ChangePassword',
-      path: '/MemberCenter/PersonalCenter/ChangePassword',
-      component: ChangePassword
-    },
-    // 电子券
-    {
-      name: 'ElectronicTicket',
-      path: '/MemberCenter/PersonalCenter/ElectronicTicket',
-      component: ElectronicTicket
-    },
-    // 发票
-    {
-      name: 'Integral',
-      path: '/MemberCenter/PersonalCenter/Integral',
-      component: Integral
-    },
-    // 积分
-    {
-      name: 'Invoice',
-      path: '/MemberCenter/PersonalCenter/Invoice',
-      component: Invoice
-    },
-    // 收货地址
-    {
-      name: 'ReceivingAddress',
-      path: '/MemberCenter/PersonalCenter/ReceivingAddress',
-      component: ReceivingAddress
-    },
-    // 订单列表
-    {
-      name: 'OrderList',
-      path: '/MemberCenter/ShopCenter/OrderList',
-      component: OrderList
-    },
-    // 收藏列表
-    {
-      name: 'CollectionList',
-      path: '/MemberCenter/ShopCenter/CollectionList',
-      component: CollectionList
+      component: MemberCenter,
+      children: [
+        {
+          path: 'PersonalCenter/PersonalData',
+          name: 'PersonalData',
+          component: PersonalData
+        },
+        {
+          path: 'PersonalCenter/EditProfile',
+          name: 'EditProfile',
+          component: EditProfile
+        },
+        {
+          path: 'PersonalCenter/AlterEmail',
+          name: 'AlterEmail',
+          component: AlterEmail
+        },
+        {
+          path: 'PersonalCenter/AlterPhone',
+          name: 'AlterPhone',
+          component: AlterPhone
+        },
+        {
+          path: 'PersonalCenter/ChangePassword',
+          name: 'ChangePassword',
+          component: ChangePassword
+        },
+        {
+          path: 'PersonalCenter/ElectronicTicket',
+          name: 'ElectronicTicket',
+          component: ElectronicTicket
+        },
+        {
+          path: 'PersonalCenter/Integral',
+          name: 'Integral',
+          component: Integral
+        },
+        {
+          path: 'PersonalCenter/Invoice',
+          name: 'Invoice',
+          component: Invoice
+        },
+        {
+          path: 'PersonalCenter/ReceivingAddress',
+          name: 'ReceivingAddress',
+          component: ReceivingAddress
+        },
+        {
+          path: 'PersonalCenter/AddAddress',
+          name: 'AddAddress',
+          component: AddAddress
+        },
+        {
+          path: 'PersonalCenter/OrderList',
+          name: 'OrderList',
+          component: OrderList
+        },
+        {
+          path: 'ShopCenter/CollectionList',
+          name: 'CollectionList',
+          component: CollectionList
+        },
+        {
+          path: 'ShopCenter/Order',
+          name: 'Order',
+          component: Order
+        }
+      ]
     },
     // 陈----会员中心--end
     // 公告页面

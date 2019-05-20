@@ -1,7 +1,7 @@
 <template>
-  <!--改变密码-->
+  <!--修改个人资料-->
   <div class="user-content">
-      <h3>更改密码</h3>
+      <h3>更改个人资料</h3>
       <el-form :label-position="labelPosition" label-width="80px" :model="formLabelAlign">
           <el-form-item label="原始密码">
               <el-input v-model="formLabelAlign.password" type="password"></el-input>
@@ -34,16 +34,16 @@ export default {
 <style lang="less" scoped>
   @import "~static/css/common.less";
   .user-content{
-      text-align: center;
-      .el-form{
-        margin: auto;
-        width: 400px;
+    text-align: center;
+    .el-form{
+      margin: auto;
+      width: 400px;
+    }
+    .el-button{
+      width: 100px;
+      /deep/span{
+        color: @white;
       }
-      .el-button{
-          width: 100px;
-          /deep/span{
-            color: @white;
-          }
-      }
+    }
   }
 </style>

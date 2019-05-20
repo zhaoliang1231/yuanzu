@@ -1,10 +1,12 @@
 <template>
-  <!--电子券-->
-  <div>
+  <!--我的电子券-->
+  <div class="user-content">
     我的电子券
   </div>
 </template>
 <script>
-export default {}
+export default {
+}
 </script>
-<style></style>
+<style lang="less" scoped>
+</style>
