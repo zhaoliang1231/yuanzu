@@ -4,7 +4,7 @@
       <div class="he-top-nav-list fr">购物车</div>
     </router-link>
     <span class="fr">|</span>
-    <router-link to="/MemberCenter">
+    <router-link to="/MemberCenter/PersonalCenter/PersonalData">
       <div class="he-top-nav-list fr">会员中心</div>
     </router-link>
     <span class="fr">|</span>
