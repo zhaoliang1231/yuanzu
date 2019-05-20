@@ -2,7 +2,7 @@
     <div>
         <div class="detail_nav">
              <span>
-                <a class="a-hover-pink" href="">主页</a>
+                 <router-link class="a-hover-pink" to="/">主页</router-link>
             </span>
             <span>></span>
             <span>
@@ -86,11 +86,13 @@
                             <dd>
                                 <ul><li class="number" data-input="box">
                                     <div class="left">
-                                        <input id="qty" name="qty" autocomplete="off" size="1" type="text" value="1" maxlength="3" data-input="input"> <input type="hidden" name="productCodePost" value="100001416">
-                                        <input type="hidden" name="taste" value="香芋+香芋（网红款）">
+                                        <input id="qty" name="qty" autocomplete="off" size="1" type="text" :value="num" maxlength="3" data-input="input">
+                                        <input type="hidden" name="productCodePost" value="100001416">
+                                        <input type="hidden" name="taste" value="香芋+香芋（网红款">
                                     </div>
                                     <div class="right">
-                                        <span class="plus" data-input="plus">+</span> <span class="minus" data-input="minus">-</span>
+                                        <span class="plus" data-input="plus" @click="addNum">+</span>
+                                        <span class="minus" data-input="minus" @click="reduceNum">-</span>
                                     </div>
                                 </li>
                                 </ul>
@@ -114,10 +116,13 @@
                 </div>
                 <div class="share">
                     <div class="bianhao">商品编号：100001416</div>
-                    <a href="">
+                    <template>
+                    <span :plain="true" @click="open" style="cursor: pointer" >
                         <img src="../../../static/img/icon_sc.gif" alt="">
-                        收藏
-                    </a>
+                       收藏
+                    </span>
+                    </template>
+
                 </div>
             </div>
         </div>
@@ -136,6 +141,7 @@ import img3 from 'static/img/100001416_L2.jpg'
     name: 'DetaiBanner',
     data () {
       return {
+        num: 1,
         // 动态绑定class 标识
         current: 0,
         //规格选项标识
@@ -175,6 +181,21 @@ import img3 from 'static/img/100001416_L2.jpg'
         },
         changBorder1: function (index) {
           this.current2 = index
+        },
+        addNum: function () {
+          this.num++
+        },
+        reduceNum: function () {
+          if (this.num > 1) {
+            this.num--
+          }
+        },
+        open: function () {
+          this.$message({
+            message: '已添加到我的收藏',
+            type: 'success',
+            duration: 1000
+          })
         }
       }
   }

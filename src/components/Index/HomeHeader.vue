@@ -14,17 +14,17 @@
           </div>
           <ul class="home-Notice-content-box">
             <li class="home-Notice-content">
-              <router-link to="">
+              <router-link to="/notice">
                 <span title="【公告】元祖2018年中秋月饼报废公告" class="mn-a fontSize-12">【公告】元祖2018年中秋月饼报废公告</span>
               </router-link>
             </li>
             <li class="home-Notice-content">
-              <router-link to="">
+              <router-link to="/notice">
                 <span title="【公告】元祖2018年中秋月饼报废公告" class="mn-a fontSize-12">【公告】元祖2018年中秋月饼报废公告</span>
               </router-link>
             </li>
             <li class="home-Notice-content">
-              <router-link to="">
+              <router-link to="/notice">
                 <span title="【公告】元祖2018年中秋月饼报废公告" class="mn-a fontSize-12">【公告】元祖2018年中秋月饼报废公告</span>
               </router-link>
             </li>

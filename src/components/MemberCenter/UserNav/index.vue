@@ -2,7 +2,7 @@
   <div class="personal-center">
     <el-row class="tac">
       <el-col :span="12">
-        <el-menu default-active="2" class="el-menu-vertical-demo">
+        <el-menu default-active="1"  class="el-menu-vertical-demo" :default-openeds="openends">
           <el-submenu index="1">
             <template slot="title">
               <span>个人中心</span>
@@ -28,25 +28,32 @@
               </router-link>
             </el-menu-item-group>
           </el-submenu>
-        </el-menu>
-        <el-menu default-active="2" class="el-menu-vertical-demo">
-          <el-submenu index="2">
-            <template slot="title">
-              <span>购物中心</span>
-            </template>
-            <el-menu-item-group>
-              <router-link :to="{name:'PersonalData'}"><el-menu-item index="2-1">购物车</el-menu-item></router-link>
-              <router-link :to="{name:'OrderList'}"><el-menu-item index="2-2">订单列表</el-menu-item></router-link>
-              <router-link :to="{name:'CollectionList'}"><el-menu-item index="2-3">收藏列表</el-menu-item></router-link>
-            </el-menu-item-group>
-          </el-submenu>
+                <el-submenu index="2">
+                    <template slot="title">
+                        <span>购物中心</span>
+                    </template>
+                    <el-menu-item-group>
+                        <router-link :to="{name:'PersonalData'}"><el-menu-item index="2-1">购物车</el-menu-item></router-link>
+                        <router-link :to="{name:'OrderList'}"><el-menu-item index="2-2">订单列表</el-menu-item></router-link>
+                        <router-link :to="{name:'CollectionList'}"><el-menu-item index="2-3">收藏列表</el-menu-item></router-link>
+                    </el-menu-item-group>
+                </el-submenu>
         </el-menu>
       </el-col>
     </el-row>
   </div>
 </template>
 <script>
-export default {}
+export default {
+  data () {
+    return {
+      openends: ['1', '2']
+    }
+  },
+  methods: {
+
+  }
+}
 </script>
 <style lang="less" scoped>
   .personal-center {
