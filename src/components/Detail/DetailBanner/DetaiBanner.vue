@@ -86,11 +86,13 @@
                             <dd>
                                 <ul><li class="number" data-input="box">
                                     <div class="left">
-                                        <input id="qty" name="qty" autocomplete="off" size="1" type="text" value="1" maxlength="3" data-input="input"> <input type="hidden" name="productCodePost" value="100001416">
-                                        <input type="hidden" name="taste" value="香芋+香芋（网红款）">
+                                        <input id="qty" name="qty" autocomplete="off" size="1" type="text" :value="num" maxlength="3" data-input="input">
+                                        <input type="hidden" name="productCodePost" value="100001416">
+                                        <input type="hidden" name="taste" value="香芋+香芋（网红款">
                                     </div>
                                     <div class="right">
-                                        <span class="plus" data-input="plus">+</span> <span class="minus" data-input="minus">-</span>
+                                        <span class="plus" data-input="plus" @click="addNum">+</span>
+                                        <span class="minus" data-input="minus" @click="reduceNum">-</span>
                                     </div>
                                 </li>
                                 </ul>
@@ -136,6 +138,7 @@ import img3 from 'static/img/100001416_L2.jpg'
     name: 'DetaiBanner',
     data () {
       return {
+        num: 1,
         // 动态绑定class 标识
         current: 0,
         //规格选项标识
@@ -175,6 +178,14 @@ import img3 from 'static/img/100001416_L2.jpg'
         },
         changBorder1: function (index) {
           this.current2 = index
+        },
+        addNum: function () {
+          this.num++
+        },
+        reduceNum: function () {
+          if (this.num > 1) {
+            this.num--
+          }
         }
       }
   }
