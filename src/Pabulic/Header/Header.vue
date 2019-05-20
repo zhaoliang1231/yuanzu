@@ -1,6 +1,6 @@
 <template>
   <div class="he-top-nav clearfix">
-    <router-link to="/settlement">
+    <router-link to="/">
       <div class="he-top-nav-list fr">购物车</div>
     </router-link>
     <span class="fr">|</span>
@@ -8,7 +8,7 @@
       <div class="he-top-nav-list fr">会员中心</div>
     </router-link>
     <span class="fr">|</span>
-    <router-link to="/login">
+    <router-link to="/Login">
       <div class="he-top-nav-list fr">登录/注册</div>
     </router-link>
   </div>

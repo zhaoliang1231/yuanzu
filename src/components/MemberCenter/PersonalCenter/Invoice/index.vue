@@ -1,6 +1,6 @@
 <template>
   <!--积分-->
-  <div>
+  <div class="user-content">
     积分
   </div>
 </template>
