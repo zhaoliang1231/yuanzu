@@ -3,7 +3,9 @@
   <div>
     <div class="login_bar">
         <span>
-            <a class="a-hover-pink" href="">主页</a>
+            <router-link to="/" class="a-hover-pink">
+                主页
+            </router-link>
         </span>
         <span>></span>
         <span>

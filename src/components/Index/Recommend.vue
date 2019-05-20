@@ -5,7 +5,7 @@
           <el-tab-pane label="元祖新品" name="first">
             <div class="home-goods-lists clearfix">
               <div class="home-goods-list li-hover-shadow fl"> 
-                <router-link to="">
+                <router-link to="/detail">
                   <img title="8号溪云初起巧克力蛋糕" src="~static/img/testimg1.jpg"/>
                   <span class="fontSize-14 mn-a">溪云初起巧克力蛋糕</span>
                   <p class="fontSize-20 font-color-red">¥258.00</p>
