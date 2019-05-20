@@ -6,7 +6,7 @@
         <div class="sn-n-box">
           <p>您的购物车还是空的</p>
           <p>返回首页添加喜欢的产品吧!</p>
-          <a href="/" class="hover-bg-pink">返回首页</a>
+          <router-link to="/" class="hover-bg-pink">返回首页</router-link>
         </div>
       </div>
     </div>
