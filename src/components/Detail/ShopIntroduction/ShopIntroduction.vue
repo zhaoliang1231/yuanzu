@@ -2,11 +2,11 @@
     <div>
         <div class=" productTabs">
             <ul class="clearfix tabs_list">
-                <li>
-                    <router-link to="/detail" class="active">商品介绍</router-link>
+                <li @click="addClasss" :class="{active:flag}">
+                    <router-link to="/detail" >商品介绍</router-link>
                 </li>
-                <li>
-                    <router-link to="/detail/evaluate">商品评价</router-link>
+                <li :class="{active:flag1}" @click="addClassfiy">
+                    <router-link to="/detail/evaluate" >商品评价</router-link>
                 </li>
             </ul>
             <router-view></router-view>
@@ -17,7 +17,25 @@
 
 <script>
   export default {
-    name: 'ShopIntroduction'
+    name: 'ShopIntroduction',
+    data () {
+      return {
+        flag: true,
+        flag1 : false
+      }
+    },
+    methods: {
+      addClasss : function () {
+        console.log("111")
+        this.flag = true
+        this.flag1 = false
+      },
+      addClassfiy : function () {
+        console.log("12")
+        this.flag = false
+        this.flag1 = true
+      }
+    }
   }
 </script>
 

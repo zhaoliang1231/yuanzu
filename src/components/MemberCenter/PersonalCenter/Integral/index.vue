@@ -1,10 +1,11 @@
 <template>
   <!--发票-->
-  <div>
+  <div class="user-content">
     发票
   </div>
 </template>
 <script>
 export default {}
 </script>
-<style></style>
+<style lang="less" scoped>
+</style>
