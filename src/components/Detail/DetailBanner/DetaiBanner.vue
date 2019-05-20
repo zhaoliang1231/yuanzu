@@ -2,7 +2,7 @@
     <div>
         <div class="detail_nav">
              <span>
-                <a class="a-hover-pink" href="">主页</a>
+                 <router-link class="a-hover-pink" to="/">主页</router-link>
             </span>
             <span>></span>
             <span>

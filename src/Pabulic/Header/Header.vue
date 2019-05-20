@@ -1,10 +1,10 @@
 <template>
   <div class="he-top-nav clearfix">
-    <router-link to="/">
+    <router-link to="/settlement">
       <div class="he-top-nav-list fr">购物车</div>
     </router-link>
     <span class="fr">|</span>
-    <router-link to="/">
+    <router-link to="/MemberCenter">
       <div class="he-top-nav-list fr">会员中心</div>
     </router-link>
     <span class="fr">|</span>
