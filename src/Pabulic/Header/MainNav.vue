@@ -7,92 +7,92 @@
         </div>
         <ul v-if="toggle" class="mn-classify-lists">
           <li :style="ico[0]"  class="mn-classify-list">
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="mn-classify-list-title fontSize-14 mn-a">元祖端午季</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">纸质提货券</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">端午礼盒</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">电子提货券</span>
             </router-link>
           </li>
           <li :style="ico[1]"  class="mn-classify-list mn-bg">
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="mn-classify-list-title fontSize-14 mn-a">元祖梦蛋糕</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">母亲节转款</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">鲜奶蛋糕</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">巧克力蛋糕</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">慕思蛋糕</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">多层蛋糕</span>
             </router-link>
           </li>
           <li :style="ico[2]" class="mn-classify-list">
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="mn-classify-list-title fontSize-14 mn-a">冰品季</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">纸质提货券</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">端午礼盒</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">电子提货券</span>
             </router-link>
           </li>
           <li :style="ico[3]" class="mn-classify-list mn-bg">
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="mn-classify-list-title fontSize-14 mn-a">元祖礼盒</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">纸质提货券</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">端午礼盒</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">电子提货券</span>
             </router-link>
           </li>
           <li :style="ico[4]"  class="mn-classify-list">
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="mn-classify-list-title fontSize-14 mn-a">精致西点</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">纸质提货券</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">端午礼盒</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">电子提货券</span>
             </router-link>
           </li>
           <li :style="ico[5]" class="mn-classify-list mn-bg">
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="mn-classify-list-title fontSize-14 mn-a">元祖端午季</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">纸质提货券</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">端午礼盒</span>
             </router-link>
-            <router-link to="/">
+            <router-link to="/classfiy">
               <span class="fontSize-12 mn-a">电子提货券</span>
             </router-link>
           </li>
