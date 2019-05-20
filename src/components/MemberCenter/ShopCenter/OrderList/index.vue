@@ -23,7 +23,7 @@
           </el-table-column>
           <el-table-column label="总计" width="80">
               <template slot-scope="scope">
-                  <span>￥{{ scope.row.count }}</span>
+                  <span class="font-color-red">￥{{ scope.row.count }}</span>
               </template>
           </el-table-column>
           <el-table-column label="操作">
@@ -60,7 +60,15 @@ export default {
 
 </script>
 <style lang="less" scoped>
+  @import "~static/css/common.less";
+  /deep/
   .el-button+.el-button{
-    margin-left-left: 0px;
+      margin-left: 0px;
   }
+  .user-content{
+    .font-color-red{
+      font-weight: bold;
+    }
+  }
+
 </style>

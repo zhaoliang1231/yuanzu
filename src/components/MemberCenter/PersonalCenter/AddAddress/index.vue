@@ -91,4 +91,24 @@ export default {
   }
 }
 </script>
-<style></style>
+<style lang="less" scoped>
+  .user-content{
+    /deep/
+    .el-form{
+      .el-form-item{
+        .el-form-item__content{
+          .el-input{
+            width: 353px;
+          }
+        }
+      }
+      .el-form-item:nth-child(2),.el-form-item:nth-child(5){
+        .el-form-item__content{
+          .el-input{
+            width: 125px;
+          }
+        }
+      }
+    }
+  }
+</style>

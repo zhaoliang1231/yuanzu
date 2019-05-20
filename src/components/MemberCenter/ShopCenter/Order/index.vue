@@ -86,7 +86,57 @@
       <!--商品信息-->
       <div class="goods-info">
         <h4>商品信息</h4>
-        <div></div>
+        <table>
+          <thead>
+            <tr>
+              <th>
+                &nbsp;
+              </th>
+              <th>数量</th>
+              <th>商品价格</th>
+              <th>总计</th>
+              <th>配送方式</th>
+              <th>门店</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="order-list">
+                    <img title="8号溪云初起巧克力蛋糕" alt="8号溪云初起巧克力蛋糕" src="./img/S.jpg">
+                  <strong>8号溪云初起巧克力蛋糕</strong>
+                  <p>规格：8号&nbsp;&nbsp;夹馅：香芋+香芋（网红款）</p>
+                </div>
+              </td>
+              <td>1</td>
+              <td>￥288.8</td>
+              <td>￥288.8</td>
+              <td>门店自取</td>
+              <td>潜水店</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="total">
+        <h5>订单合计</h5>
+        <ul>
+          <li>
+            <span>商品数量总计:</span>
+            <span>1</span>
+          </li>
+          <li>
+            <span>商品金额总计：</span>
+            <span>￥120</span>
+          </li>
+          <li>
+            <span>送货：</span>
+            <span>免费</span>
+          </li>
+          <li>
+            <span>总计</span>
+            <span>￥120</span>
+          </li>
+        </ul>
       </div>
   </div>
 </template>
@@ -128,6 +178,89 @@ export default {}
       border-bottom:1px solid black ;
       h4{
         line-height: 30px;
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+    .goods-info{
+      /deep/h4{
+        font-weight: 600;
+        font-size: 14px;
+        height: 45px;
+        line-height: 45px;
+        margin-bottom: 6px;
+      }
+      table{
+        width: 100%;
+        border: 1px solid #c7c7c7;
+        tr{
+          th{
+            line-height: 45px;
+            text-align: center;
+          }
+          td{
+            padding: 12px 16px;
+            text-align: center;
+          }
+          td:nth-child(3),td:nth-child(4){
+            color: @pink;
+            font-weight:bold ;
+          }
+        }
+      }
+      .order-list{
+        width: 388px;
+        height: 118px;
+        text-align: left;
+        img{
+          float: left;
+          width: 118px;
+          height: 118px;
+          margin-right: 41px;
+          border: 1px solid #ccc;
+          display: inline;
+        }
+        strong{
+          line-height: 19px;
+          font-size: 14px;
+          font-weight: normal;
+          padding-top: 25px;
+          display: block;
+        }
+        p{
+          height: 26px;
+          line-height: 18px;
+          overflow: inherit;
+          color: #999;
+        }
+      }
+    }
+    .total{
+      float: right;
+      width: 349px;
+      h5{
+        height: 42px;
+        line-height: 42px;
+        font-size: 14px;
+        border-bottom: 1px solid #c7c7c7;
+        font-weight: 600
+      }
+      ul li{
+        line-height: 40px;
+      }
+      ul li:nth-child(3){
+        border-bottom: 1px solid #c7c7c7;;
+      }
+      ul li{
+        span:nth-child(2){
+          float: right;
+        }
+      }
+      ul li:nth-child(2),ul li:nth-child(4){
+        span:nth-child(2){
+          color: @pink;
+          font-weight: bold;
+        }
       }
     }
     .arrival-time{

@@ -1,13 +1,13 @@
 <template>
-  <!--修改电子邮箱-->
+  <!--修改电话-->
   <div class="user-content">
-    <h3>更改电子邮箱</h3>
-    <el-form :label-position="labelPosition" label-width="80px" :model="formLabelAlign">
-      <el-form-item label="输入邮箱">
-        <el-input v-model="formLabelAlign.changepwd" type="email"></el-input>
+    <h3>更改电话号码</h3>
+    <el-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
+      <el-form-item label="输入邮箱" prop="email">
+        <el-input v-model="ruleForm2.email" auto-complete="off"></el-input>
       </el-form-item>
-      <el-form-item label="确认邮箱">
-        <el-input v-model="formLabelAlign.confirmpwd" type="alterEmali"></el-input>
+      <el-form-item label="确认邮箱" prop="alteremail">
+        <el-input v-model="ruleForm2.alteremail" auto-complete="off"></el-input>
       </el-form-item>
     </el-form>
     <el-button type="danger">确认 </el-button>
@@ -17,11 +17,37 @@
 <script>
 export default {
   data () {
+    var validatePhone = (rule, value, callback) => {
+      if (value === '') {
+        callback(new Error('请输入邮箱'))
+      } else {
+        if (this.ruleForm2.alteremail !== '') {
+          this.$refs.ruleForm2.validateField('alteremail')
+        }
+        callback()
+      }
+    }
+    var validatePhone2 = (rule, value, callback) => {
+      if (value === '') {
+        callback(new Error('请再次输入邮箱'))
+      } else if (value !== this.ruleForm2.email) {
+        callback(new Error('两次输入邮箱不一致!'))
+      } else {
+        callback()
+      }
+    }
     return {
-      labelPosition: 'left',
-      formLabelAlign: {
+      ruleForm2: {
         email: '',
-        alterEmali: ''
+        alteremail: ''
+      },
+      rules2: {
+        email: [
+          { validator: validatePhone, trigger: 'blur' }
+        ],
+        alteremail: [
+          { validator: validatePhone2, trigger: 'blur' }
+        ]
       }
     }
   }
@@ -30,7 +56,6 @@ export default {
 <style lang="less" scoped>
   @import "~static/css/common.less";
   .user-content{
-    text-align: center;
     .el-form{
       margin: auto;
       width: 400px;
@@ -40,6 +65,12 @@ export default {
       /deep/span{
         color: @white;
       }
+    }
+    .el-button.el-button--danger{
+      margin-left: 310px;
+    }
+    .el-button.el-button--info{
+      margin-left: 100px;
     }
   }
 </style>
