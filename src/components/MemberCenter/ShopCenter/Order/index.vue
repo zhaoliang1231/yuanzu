@@ -86,6 +86,7 @@
       <!--商品信息-->
       <div class="goods-info">
         <h4>商品信息</h4>
+        <div></div>
       </div>
   </div>
 </template>
