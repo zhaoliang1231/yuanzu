@@ -116,10 +116,13 @@
                 </div>
                 <div class="share">
                     <div class="bianhao">商品编号：100001416</div>
-                    <a href="">
+                    <template>
+                    <span :plain="true" @click="open" style="cursor: pointer" >
                         <img src="../../../static/img/icon_sc.gif" alt="">
-                        收藏
-                    </a>
+                       收藏
+                    </span>
+                    </template>
+
                 </div>
             </div>
         </div>
@@ -186,6 +189,13 @@ import img3 from 'static/img/100001416_L2.jpg'
           if (this.num > 1) {
             this.num--
           }
+        },
+        open: function () {
+          this.$message({
+            message: '已添加到我的收藏',
+            type: 'success',
+            duration: 1000
+          })
         }
       }
   }
